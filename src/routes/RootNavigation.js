@@ -6,6 +6,7 @@ import SignUp from "../screens/signup/SignUp";
 import Login from "../screens/login/Login";
 import ChatScreen from "../screens/main/Main";
 import Main from "../screens/main/Main";
+import Chat from "../screens/Chat";
 
 const stack = createStackNavigator();
 
@@ -32,6 +33,11 @@ const RootNavigation = () => {
           name="Main"
           component={Main}
           options={{ headerShown: false }}
+        />
+        <stack.Screen
+          name="Chat"
+          component={Chat}
+          options={{ headerShown: true }}
         />
       </stack.Navigator>
     </NavigationContainer>
